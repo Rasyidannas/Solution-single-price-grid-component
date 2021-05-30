@@ -1,0 +1,119 @@
+:root{
+    --cyan: #2ab2af;
+    --brightYellow: #c0df34;
+    --lightGray: #e5eff5;
+    --grayishBlue: #98a6bd;
+    --whiteSmoke: rgba(245, 245, 245, 0.204);
+    }
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--lightGray);
+    height: 100vh;
+
+    display: flex;
+}
+
+h1{
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    color: var(--cyan);
+}
+
+h2{
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+
+.container__intro h2{
+    color: var(--brightYellow);
+}
+
+.container__intro p{
+    color: var(--grayishBlue);
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.container{
+    background-color: white;
+    border-radius: 5px;
+    width: 45%;
+    overflow: hidden;
+
+    margin: auto;
+}
+
+.container__intro{
+    padding: 40px 30px 25px 30px;
+}
+
+.container__details{
+    background-color: var(--cyan);
+    color: var(--lightGray);
+
+    display: flex;
+}
+
+.container__subs{
+    padding: 40px 30px 35px 30px;
+    background-color: var(--cyan);
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__fund{
+    display: flex;
+    align-items: center;
+}
+
+.container__price{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.container__month{
+    color: rgb(202, 202, 202);
+    margin-left: 10px;
+}
+
+.container__services{
+    padding: 40px 30px 35px 30px;
+    background-color: var(--whiteSmoke);
+
+    flex: 1;
+}
+
+li{
+    font-size: 0.8rem;
+    color: rgb(202, 202, 202);
+    line-height: 1.8;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: var(--lightGray);
+    background-color: var(--brightYellow);
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 4px;    
+}
